@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { money } from '~/utils/pricing'
 
-const { open, enrichedLines, subtotal, count } = useCart()
+const { open, enrichedLines, subtotal, count, inc, dec, remove } = useCart()
 
 function goCart() {
   open.value = false
@@ -43,23 +43,63 @@ function goCart() {
             <div
               v-for="line in enrichedLines"
               :key="line.key"
-              class="flex items-center gap-3 rounded-2xl bg-surface p-2.5"
+              class="flex items-start gap-3 rounded-2xl bg-surface p-2.5"
             >
               <span
                 class="flex size-[46px] shrink-0 items-center justify-center rounded-[11px] font-serif text-lg text-ink/70 italic"
                 :style="{ background: `linear-gradient(155deg, ${line.product.tint}, #fff)` }"
               >{{ line.product.abbr.slice(0, 2) }}</span>
-              <div class="flex-1">
-                <p class="text-[13.5px] font-semibold">
-                  {{ line.product.name }}
-                </p>
-                <p class="mt-0.5 font-mono text-[10px] text-label">
-                  {{ line.meta }} · ×{{ line.qty }}
-                </p>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between gap-2">
+                  <div class="min-w-0">
+                    <p class="truncate text-[13.5px] font-semibold">
+                      {{ line.product.name }}
+                    </p>
+                    <p class="mt-0.5 font-mono text-[10px] text-label">
+                      {{ line.meta }}
+                    </p>
+                  </div>
+                  <UButton
+                    icon="i-lucide-trash-2"
+                    color="neutral"
+                    variant="ghost"
+                    size="xs"
+                    :aria-label="`Remove ${line.product.name}`"
+                    class="shrink-0"
+                    @click="remove(line.key)"
+                  />
+                </div>
+                <div class="mt-2 flex items-center justify-between gap-2">
+                  <div class="flex h-8 items-center gap-0.5 rounded-full border border-line px-1">
+                    <button
+                      type="button"
+                      class="flex size-6 items-center justify-center rounded-full text-body transition-colors hover:bg-white"
+                      :aria-label="`Decrease ${line.product.name} quantity`"
+                      @click="line.qty <= 1 ? remove(line.key) : dec(line.key)"
+                    >
+                      <UIcon
+                        name="i-lucide-minus"
+                        class="size-3"
+                      />
+                    </button>
+                    <span class="min-w-5 text-center text-[12.5px] font-semibold">{{ line.qty }}</span>
+                    <button
+                      type="button"
+                      class="flex size-6 items-center justify-center rounded-full text-body transition-colors hover:bg-white"
+                      :aria-label="`Increase ${line.product.name} quantity`"
+                      @click="inc(line.key)"
+                    >
+                      <UIcon
+                        name="i-lucide-plus"
+                        class="size-3"
+                      />
+                    </button>
+                  </div>
+                  <p class="text-[14px] font-semibold">
+                    {{ line.lineTotal }}
+                  </p>
+                </div>
               </div>
-              <p class="text-[14px] font-semibold">
-                {{ line.lineTotal }}
-              </p>
             </div>
           </div>
         </div>

@@ -63,8 +63,11 @@ const menuItems = computed(() => [navItems.map(item => ({
 
         <UChip
           :text="count"
+          :show="count > 0"
           color="neutral"
-          size="sm"
+          size="3xl"
+          inset
+          :ui="{ base: 'h-[18px] min-w-[18px] px-1 text-[11px] font-bold leading-none' }"
         >
           <UButton
             icon="i-lucide-shopping-bag"
