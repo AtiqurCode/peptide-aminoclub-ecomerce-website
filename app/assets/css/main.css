@@ -2,17 +2,102 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
+  /* Amino Club brand green ramp (replaces the default Nuxt brand green) */
+  --color-green-50: #F4FBF2;
+  --color-green-100: #E9FCE6;
+  --color-green-200: #CFF2C4;
+  --color-green-300: #9FE0A0;
+  --color-green-400: #6CC97E;
+  --color-green-500: #3E9A4E;
+  --color-green-600: #2F7D3E;
+  --color-green-700: #0A5331;
+  --color-green-800: #17382A;
+  --color-green-900: #0F2B20;
   --color-green-950: #052E16;
+
+  /* Ink / text tones */
+  --color-ink: #0E1621;
+  --color-ink-green: #17382A;
+  --color-body: #5A6560;
+  --color-label: #8A938E;
+  --color-footer: #0A192F;
+
+  /* Hairlines & surfaces */
+  --color-hairline: #EEF0EF;
+  --color-line: #E8EAE9;
+  --color-line-soft: #F0F2F1;
+  --color-surface: #FAFBFA;
+  --color-surface-2: #F4F6F5;
+
+  /* Decorative section tints */
+  --color-tint-mint: #E9FCE6;
+  --color-tint-sky: #DDEBFA;
+  --color-tint-butter: #FEFECA;
+  --color-tint-violet: #EFE9FB;
+  --color-tint-blush: #FCE7EC;
+}
+
+@theme {
+  --ui-radius: 0.625rem;
+  --ui-container: 77.5rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-green-200);
+}
+
+a,
+button {
+  outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-green-500);
+  border-radius: 6px;
+}
+
+img {
+  color: transparent;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-12px) rotate(-2deg); }
+}
+
+@keyframes shim {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-floaty {
+  animation: floaty 8s ease-in-out infinite;
+}
+
+.animate-shim {
+  animation: shim 3.4s ease-in-out infinite;
+}
+
+.animate-ticker {
+  animation: ticker 34s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-floaty, .animate-shim, .animate-ticker {
+    animation: none;
+  }
 }

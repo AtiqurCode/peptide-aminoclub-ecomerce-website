@@ -5,11 +5,20 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
 
+  components: [
+    { path: '~/components', pathPrefix: false }
+  ],
+
   devtools: {
     enabled: true
   },
 
   css: ['~/assets/css/main.css'],
+
+  colorMode: {
+    preference: 'light',
+    fallback: 'light'
+  },
 
   routeRules: {
     '/': { prerender: true }
