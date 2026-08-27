@@ -3,7 +3,7 @@ import { features } from '~/data/catalog'
 </script>
 
 <template>
-  <section class="mx-auto max-w-(--ui-container) px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
+  <section class="mx-auto max-w-[77.5rem] px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
     <h2 class="text-center text-[26px] font-semibold tracking-tight text-ink sm:text-[32px] lg:text-[36px]">
       Everything you need to succeed
     </h2>

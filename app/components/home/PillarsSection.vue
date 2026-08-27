@@ -7,7 +7,7 @@ const pillars = [
 </script>
 
 <template>
-  <section class="mx-auto max-w-(--ui-container) px-4 pt-14 sm:px-6 lg:px-8">
+  <section class="mx-auto max-w-[77.5rem] px-4 pt-14 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
       <div
         v-for="p in pillars"

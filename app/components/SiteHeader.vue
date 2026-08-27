@@ -14,7 +14,7 @@ const menuItems = computed(() => [navItems.map(item => ({
 
 <template>
   <header class="sticky top-0 z-50 border-b border-hairline bg-white">
-    <nav class="mx-auto flex h-[70px] max-w-(--ui-container) items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+    <nav class="mx-auto flex h-[70px] max-w-[77.5rem] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
       <NuxtLink
         to="/"
         class="flex shrink-0 items-center"

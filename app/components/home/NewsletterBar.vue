@@ -3,7 +3,7 @@ const email = ref('')
 </script>
 
 <template>
-  <section class="mx-auto max-w-(--ui-container) px-4 py-11 sm:px-6 lg:px-8 lg:py-16">
+  <section class="mx-auto max-w-[77.5rem] px-4 py-11 sm:px-6 lg:px-8 lg:py-16">
     <div class="flex flex-col items-start gap-6 rounded-[20px] bg-tint-violet p-6 sm:p-7.5 lg:flex-row lg:items-center">
       <div class="flex-1">
         <p class="text-[18px] font-semibold tracking-tight sm:text-[19px]">

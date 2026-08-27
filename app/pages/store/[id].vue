@@ -23,7 +23,7 @@ const breadcrumbItems = [
 </script>
 
 <template>
-  <div class="mx-auto max-w-(--ui-container) px-4 py-6 sm:px-6 lg:px-8 lg:pb-24">
+  <div class="mx-auto max-w-[77.5rem] px-4 py-6 sm:px-6 lg:px-8 lg:pb-24">
     <UBreadcrumb :items="breadcrumbItems" />
 
     <div class="mt-5 grid grid-cols-1 items-start gap-9 lg:grid-cols-2 lg:gap-13">

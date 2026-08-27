@@ -3,7 +3,7 @@ import { referrals } from '~/data/catalog'
 </script>
 
 <template>
-  <section class="mx-auto max-w-(--ui-container) px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
+  <section class="mx-auto max-w-[77.5rem] px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
     <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
       <div>
         <SectionEyebrow>Referrals</SectionEyebrow>

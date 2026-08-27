@@ -23,7 +23,7 @@ onUnmounted(() => {
 
 <template>
   <div class="relative overflow-hidden border-b border-[#6A3A1E] bg-[linear-gradient(90deg,#2A0F12_0%,#4A1518_50%,#2A0F12_100%)]">
-    <div class="mx-auto flex max-w-(--ui-container) flex-wrap items-center justify-center gap-2.5 px-4 py-2.5 sm:gap-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-[77.5rem] flex-wrap items-center justify-center gap-2.5 px-4 py-2.5 sm:gap-4 sm:px-6 lg:px-8">
       <span class="font-serif text-[12px] tracking-[0.3em] text-[#F3E2C2] uppercase sm:text-[13px]">
         End of Summer Sale
       </span>

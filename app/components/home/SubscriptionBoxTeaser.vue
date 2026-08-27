@@ -5,7 +5,7 @@ const preview = catalog.slice(0, 4)
 </script>
 
 <template>
-  <section class="mx-auto max-w-(--ui-container) px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
+  <section class="mx-auto max-w-[77.5rem] px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
     <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
       <div>
         <span class="inline-flex items-center gap-2 rounded-full bg-green-200 px-3 py-1.5 text-[11.5px] font-semibold text-ink-green">

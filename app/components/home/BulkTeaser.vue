@@ -38,7 +38,7 @@ const scatter = scatterPositions.map(([left, top, width, rotate], i) => ({
       }"
     />
 
-    <div class="relative mx-auto grid max-w-(--ui-container) grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-23">
+    <div class="relative mx-auto grid max-w-[77.5rem] grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-23">
       <div class="order-1 lg:order-2">
         <span class="inline-flex items-center gap-2 rounded-full bg-tint-butter px-3 py-1.5 text-[11.5px] font-semibold text-[#5E5518]">
           New

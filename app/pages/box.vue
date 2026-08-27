@@ -19,7 +19,7 @@ const statCards = [
 </script>
 
 <template>
-  <div class="mx-auto max-w-(--ui-container) px-4 py-9 sm:px-6 lg:px-8 lg:pb-24">
+  <div class="mx-auto max-w-[77.5rem] px-4 py-9 sm:px-6 lg:px-8 lg:pb-24">
     <SectionEyebrow>Subscription box</SectionEyebrow>
     <h1 class="mt-2.5 text-[32px] font-semibold tracking-tight text-ink sm:text-[38px] lg:text-[42px]">
       Build your <span class="font-serif font-normal italic">box</span>

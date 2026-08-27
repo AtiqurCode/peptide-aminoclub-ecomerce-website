@@ -4,7 +4,7 @@ import { footerColumns, paymentIcons, socialLinks } from '~/data/catalog'
 
 <template>
   <footer class="bg-footer text-white">
-    <div class="mx-auto grid max-w-(--ui-container) grid-cols-2 gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6 lg:grid-cols-5 lg:px-8">
+    <div class="mx-auto grid max-w-[77.5rem] grid-cols-2 gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6 lg:grid-cols-5 lg:px-8">
       <div class="col-span-2 sm:col-span-3 lg:col-span-1">
         <AppLogo
           inverted
@@ -49,7 +49,7 @@ import { footerColumns, paymentIcons, socialLinks } from '~/data/catalog'
       </div>
     </div>
 
-    <div class="mx-auto max-w-(--ui-container) px-4 pb-7 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-[77.5rem] px-4 pb-7 sm:px-6 lg:px-8">
       <div class="rounded-lg border-l-4 border-amber-400 bg-amber-400/8 px-4.5 py-4">
         <p class="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.14em] text-amber-400 uppercase">
           <UIcon

@@ -6,7 +6,7 @@ useSeoMeta({ title: 'Lab account — Amino Club' })
 </script>
 
 <template>
-  <div class="mx-auto max-w-(--ui-container) px-4 py-9 sm:px-6 lg:px-8 lg:pb-24">
+  <div class="mx-auto max-w-[77.5rem] px-4 py-9 sm:px-6 lg:px-8 lg:pb-24">
     <h1 class="text-[28px] font-semibold tracking-tight text-ink sm:text-[36px]">
       Lab account
     </h1>

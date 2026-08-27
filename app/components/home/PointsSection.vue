@@ -5,7 +5,7 @@ import { money } from '~/utils/pricing'
 
 <template>
   <section class="bg-tint-mint">
-    <div class="mx-auto grid max-w-(--ui-container) grid-cols-1 items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-17.5">
+    <div class="mx-auto grid max-w-[77.5rem] grid-cols-1 items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-17.5">
       <div>
         <p class="font-mono text-[10px] tracking-[0.22em] text-ink-green/55 uppercase">
           Amino Club credit

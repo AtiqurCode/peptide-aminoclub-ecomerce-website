@@ -25,7 +25,7 @@ const filtered = computed(() => {
 </script>
 
 <template>
-  <div class="mx-auto max-w-(--ui-container) px-4 py-9 sm:px-6 lg:px-8 lg:pb-20">
+  <div class="mx-auto max-w-[77.5rem] px-4 py-9 sm:px-6 lg:px-8 lg:pb-20">
     <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
       <div>
         <SectionEyebrow>Catalog · research use only</SectionEyebrow>

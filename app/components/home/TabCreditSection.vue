@@ -4,7 +4,7 @@ import { tabRows } from '~/data/catalog'
 
 <template>
   <section class="bg-ink text-white">
-    <div class="mx-auto grid max-w-(--ui-container) grid-cols-1 items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-18">
+    <div class="mx-auto grid max-w-[77.5rem] grid-cols-1 items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-18">
       <div>
         <p class="font-mono text-[10px] tracking-[0.22em] text-white/45 uppercase">
           Amino tab

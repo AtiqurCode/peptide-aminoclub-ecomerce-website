@@ -13,7 +13,7 @@ const activeResult = computed(() => {
 </script>
 
 <template>
-  <section class="mx-auto max-w-(--ui-container) px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
+  <section class="mx-auto max-w-[77.5rem] px-4 py-14 sm:px-6 lg:px-8 lg:py-19">
     <div class="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
       <div>
         <h2 class="text-[28px] leading-[1.1] font-semibold tracking-tight text-ink sm:text-[34px] lg:text-[40px]">
