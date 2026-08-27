@@ -20,10 +20,6 @@ export default defineNuxtConfig({
     fallback: 'light'
   },
 
-  routeRules: {
-    '/': { prerender: true }
-  },
-
   compatibilityDate: '2026-06-30',
 
   eslint: {
